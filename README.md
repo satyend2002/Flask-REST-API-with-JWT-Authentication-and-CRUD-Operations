@@ -46,6 +46,24 @@ It allows users to perform **CRUD operations** (Create, Read, Update, Delete) on
 
 
 
+## Project Structure
+
+app_one/
+│
+├── controllers/
+│   └── items_controller.py
+│
+├── models/
+│   └── user_models.py
+│
+├── resources/
+│   ├── login_resource.py
+│   ├── register_resource.py
+│   └── items_resource.py
+│
+└── app.py
+
+
 
 ## How to Run the Project
 
