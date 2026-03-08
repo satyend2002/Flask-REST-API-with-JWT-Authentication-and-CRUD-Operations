@@ -1,14 +1,20 @@
-# Flask Book Management REST API
+# Flask REST API with JWT Authentication and CRUD Operations
 
 This project is a RESTful API built using **Python and Flask** to manage book records.  
 It allows users to perform **CRUD operations** (Create, Read, Update, Delete) on a SQL database.
 
 ## Features
-- Built with Python Flask framework
-- RESTful API architecture
+
+- User Registration API
+- User Login with JWT Authentication
+- Secure password hashing
+- Protected endpoints using JWT tokens
+- CRUD operations for items
+- Request validation using Flask-RESTful reqparse
 - SQL database integration
-- JSON request and response handling
-- Clean backend structure
+- Clean project structure (Models, Controllers, Resources)
+
+
 
 ## Technologies Used
 - Python
@@ -16,15 +22,30 @@ It allows users to perform **CRUD operations** (Create, Read, Update, Delete) on
 - SQL / SQLite
 - REST API
 
+
+
 ## API Endpoints
+
+### Authentication
 
 | Method | Endpoint | Description |
 |------|------|------|
-| GET | /books | Get all books |
-| GET | /books/<id> | Get book by ID |
-| POST | /books | Add new book |
-| PUT | /books/<id> | Update book |
-| DELETE | /books/<id> | Delete book |
+| POST | /register | Register new user |
+| POST | /login | Login user and generate JWT token |
+
+
+### Items
+
+| Method | Endpoint | Description |
+|------|------|------|
+| POST | /items | Create new item (JWT required) |
+| GET | /items | Get all items |
+| GET | /items/<id> | Get item by id |
+| PUT | /items/<id> | Update item (JWT required) |
+| DELETE | /items/<id> | Delete item (JWT required) |
+
+
+
 
 ## How to Run the Project
 
