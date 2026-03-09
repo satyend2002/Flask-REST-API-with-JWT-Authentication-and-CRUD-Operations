@@ -77,7 +77,7 @@ cd flask-book-management-api
 pip install -r requirements.txt
 
 ### 4. Run the application
-python app.py
+python run.py
 
 
 ## Author
